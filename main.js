@@ -86,22 +86,22 @@ let updateWrongLetter = ( () => {
     wrongLetter.innerText = `${wrongLetters.length > 0 ? "Wrong" : ""}
     ${wrongLetters.map(le => `${le}`)}`;
     switch(wrongLetters.length){
-        case 1: image.src = "11.png";
+        case 1: image.src = "img/11.png";
                 colorAlert("crimson");
                 break;
-        case 2 : image.src = "22.png";
+        case 2 : image.src = "img/22.png";
                 colorAlert("crimson");
                 break;
-        case 3 : image.src = "33.png";
+        case 3 : image.src = "img/33.png";
                 colorAlert("crimson");
                 break;
-        case 4 : image.src = "44.png";
+        case 4 : image.src = "img/44.png";
                 colorAlert("crimson");        
                 break;
-        case 5 : image.src = "55.png";
+        case 5 : image.src = "img/55.png";
                 colorAlert("crimson");        
                 break;
-        case 6 : image.src = "66.png";
+        case 6 : image.src = "img/66.png";
                 colorAlert("crimson");        
                 break;
         default : break;
