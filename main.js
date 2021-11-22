@@ -37,7 +37,7 @@ if(gameOver){
             if(randomWord.includes(letter)){
                 if((!correctLetters.includes(letter))&&(gameOver)){
                     correctLetters.push(letter);
-                    generateWord();
+                    createLetter();
                 }
             }else{
                 if(!wrongLetters.includes(letter)&&(gameOver)){
@@ -52,7 +52,7 @@ if(gameOver){
     });
 }
 
-let generateWord = ( () => {
+let createLetter = ( () => {
     word.innerHTML = `${randomWord.split("")
     .map(lett =>`<span class="letter">
     ${correctLetters.includes(lett) ? lett : ""}</span>`).join("")}`;
@@ -128,4 +128,4 @@ let missWord = ( () =>{
 
 
 
-generateWord();
+createLetter();
