@@ -100,14 +100,20 @@ body {
     text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(255, 255, 255), 0 0 0.2em rgb(77, 77, 89);
     font-size: 30px;
     font-weight: 800;
-    top: 25%;
+    top: 20%;
 }
 
+.word-result{
+    position: absolute;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(255, 255, 255), 0 0 0.2em rgb(77, 77, 89);
+    font-size: 20px;
+    top: 50%;
+}
 
 button{
     position: absolute;
 	background: transparent;
-    top: 60%;
+    top: 70%;
 	border: none;
 	outline: none;
     user-select: none;

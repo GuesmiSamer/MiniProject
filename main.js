@@ -2,6 +2,7 @@ const word = document.querySelector(".word");
 const wrongLetter = document.querySelector("#wrong-text");
 const image = document.querySelector(".image");
 const resultText = document.querySelector(".text-result");
+const resultWord = document.querySelector(".word-result");
 const result = document.querySelector(".result");
 const resultBtn = document.querySelector(".button");
 const model = document.querySelector(".Model");
@@ -76,6 +77,7 @@ let Play = ( () => {
         resultText.textContent = "Failed :(";
         resultText.style.color = "crimson";
         word.style.color = "crimson";
+        resultWord.innerText =`hidden word : ${randomWord}`;
         document.body.style.background = "dimgray";
         document.body.style.opacity = "0.7";
         gameOver=false;
